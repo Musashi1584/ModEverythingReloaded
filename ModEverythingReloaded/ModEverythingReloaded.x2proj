@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Guid>ae04ed66-8e13-4627-ad5a-c49f6a2b02ab</Guid>
+    <Name>WotC Mod Everything Reloaded</Name>
+    <Description>Extends the Mod Everything mod to support utility weapons.
+
+tags=item, gameplay, ui</Description>
+    <SteamPublishID>0</SteamPublishID>
+    <AssemblyName>WotcModEverythingReloaded</AssemblyName>
+    <RootNamespace>WotcModEverythingReloaded</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Config\" />
+    <Folder Include="Content\" />
+    <Folder Include="Localization\" />
+    <Folder Include="Src\" />
+    <Folder Include="Src\WotcModEverythingReloaded\" />
+    <Folder Include="Src\WotcModEverythingReloaded\Classes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Config\XComWeaponCustomisation.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Localization\WotcModEverythingReloaded.int">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ReadMe.txt" />
+    <Content Include="ModPreview.jpg" />
+    <Content Include="Config\XComEditor.ini" />
+    <Content Include="Config\XComEngine.ini" />
+    <Content Include="Config\XComGame.ini" />
+    <Content Include="Src\WotcModEverythingReloaded\Classes\SL_UIAvengerHud.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\WotcModEverythingReloaded\Classes\UIArmory_EquipmentSelect.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\WotcModEverythingReloaded\Classes\UISL_Armory_MainMenu.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\WotcModEverythingReloaded\Classes\UISL_Armory_WeaponUpgrade.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\WotcModEverythingReloaded\Classes\X2DownloadableContentInfo_WotcModEverythingReloaded.uc" />
+  </ItemGroup>
+  <Import Project="$(MSBuildLocalExtensionPath)\XCOM2.targets" />
+</Project>
