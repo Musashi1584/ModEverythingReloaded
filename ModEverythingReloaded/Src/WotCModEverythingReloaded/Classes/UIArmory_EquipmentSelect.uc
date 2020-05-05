@@ -4,6 +4,7 @@ var config bool ALLOW_SECONDARY;
 var config bool ALLOW_ARMOR;
 var config bool ALLOW_HEAVY;
 var config bool ALLOW_UTILITY;
+var config array<EInventorySlot> ALLOWED_SLOTS;
 var localized string m_strListTitle;
 
 // the equipment list
@@ -73,6 +74,7 @@ simulated function UpdateEquipmentList()
 	local UIArmory_LoadoutItem Item;
 	local array<XComGameState_Item> SlotItems;
 	local XComGameState_Item SlotItem;
+	local EInventorySlot InvSlot;
 
 	EquipmentList.ClearItems();
 
@@ -81,6 +83,7 @@ simulated function UpdateEquipmentList()
 
 	Item = UIArmory_LoadoutItem(EquipmentList.CreateItem(class'UIArmory_LoadoutItem'));
 	Item.InitLoadoutItem(GetEquippedItem(eInvSlot_PrimaryWeapon), eInvSlot_PrimaryWeapon, true);
+
 	if (default.ALLOW_SECONDARY)
 	{
 		SlotItem = GetEquippedItem(eInvSlot_SecondaryWeapon);
@@ -115,6 +118,16 @@ simulated function UpdateEquipmentList()
 				Item = UIArmory_LoadoutItem(EquipmentList.CreateItem(class'UIArmory_LoadoutItem'));
 				Item.InitLoadoutItem(SlotItem, eInvSlot_Utility, true);
 			}
+		}
+	}
+
+	foreach default.ALLOWED_SLOTS(InvSlot)
+	{
+		SlotItem = GetEquippedItem(InvSlot);
+		if (SlotItem != none)
+		{
+			Item = UIArmory_LoadoutItem(EquipmentList.CreateItem(class'UIArmory_LoadoutItem'));
+			Item.InitLoadoutItem(SlotItem, InvSlot, true);
 		}
 	}
 }
