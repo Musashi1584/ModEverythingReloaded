@@ -4,6 +4,8 @@
 THIS MOD DOES NOT ADD ANY SLOT. IT JUST TWEAKS THE UI THAT YOU CAN MOD ITEMS OTHER THAN PRIMARY WEAPONS
 THIS IS BECAUSE ITS A META MOD NOT A GAMEPLAY MOD[/b]
 
+If you want to change the number of slots for weapons you can use
+[url=steamcommunity.com/sharedfiles/filedetails/?id=1171964288]Configure Upgrade Slots[/url]
 
 Mod really everything!
 

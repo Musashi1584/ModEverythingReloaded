@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # XCOM ModBuddy Solution File, Format Version 11.00
 VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{5DAE07AF-E217-45C1-8DE7-FF99D6011E8A}") = "ModEverythingReloaded", "ModEverythingReloaded\ModEverythingReloaded.x2proj", "{C1C983F3-3873-4E63-9FF1-7A06271D9138}"
+Project("{5DAE07AF-E217-45C1-8DE7-FF99D6011E8A}") = "ModEverythingReloaded", "ModEverythingReloaded\ModEverythingReloaded.x2proj", "{4167E35A-44BF-43FD-A41B-0F2227B0A23A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Default|XCOM 2 = Default|XCOM 2
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C1C983F3-3873-4E63-9FF1-7A06271D9138}.Debug|XCOM 2.ActiveCfg = Default|XCOM 2
-		{C1C983F3-3873-4E63-9FF1-7A06271D9138}.Debug|XCOM 2.Build.0 = Default|XCOM 2
-		{C1C983F3-3873-4E63-9FF1-7A06271D9138}.Default|XCOM 2.ActiveCfg = Default|XCOM 2
-		{C1C983F3-3873-4E63-9FF1-7A06271D9138}.Default|XCOM 2.Build.0 = Default|XCOM 2
+		{4167E35A-44BF-43FD-A41B-0F2227B0A23A}.Debug|XCOM 2.ActiveCfg = Default|XCOM 2
+		{4167E35A-44BF-43FD-A41B-0F2227B0A23A}.Debug|XCOM 2.Build.0 = Default|XCOM 2
+		{4167E35A-44BF-43FD-A41B-0F2227B0A23A}.Default|XCOM 2.ActiveCfg = Default|XCOM 2
+		{4167E35A-44BF-43FD-A41B-0F2227B0A23A}.Default|XCOM 2.Build.0 = Default|XCOM 2
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

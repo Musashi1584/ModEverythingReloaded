@@ -1,12 +1,12 @@
 class SL_UIAvengerHud extends UIScreenListener;
 
-var UIAvengerHud AvengerHud;
-var Object ListenerObj;
+
 // This event is triggered after a screen is initialized
 event OnInit(UIScreen Screen)
 {
-	AvengerHud = UIAvengerHud(Screen);
-	if (AvengerHud == none)
+	local Object ListenerObj;
+
+	if (UIAvengerHud(Screen) == none)
 		return;
 	ListenerObj = self;
 	`XEVENTMGR.RegisterForEvent(ListenerObj, 'OnArmoryMainMenuUpdate', self.OnArmoryMainMenuUpdate, ELD_Immediate);
